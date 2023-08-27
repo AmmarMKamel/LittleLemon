@@ -1,3 +1,7 @@
 - Admin
 username : admin
 password : admin@lemon753
+
+- User
+username : mario
+password : mario@lemon753
