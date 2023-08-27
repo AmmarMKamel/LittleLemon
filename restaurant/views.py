@@ -9,6 +9,7 @@ def index(request):
     return render(request, 'home.html', {})
 
 class MenuItemsView(generics.ListCreateAPIView):
+    permission_classes = [permissions.IsAuthenticated]
     queryset = Menu.objects.all()
     serializer_class = MenuItemSerializer
 
