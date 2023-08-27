@@ -1,3 +1,8 @@
+- API endpoints
+api/menu
+api/bookings
+api/users --> For Registeration
+
 - Admin
 username : admin
 password : admin@lemon753

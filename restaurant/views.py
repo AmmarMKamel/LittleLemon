@@ -1,12 +1,8 @@
-from django.shortcuts import render
-from django.http import HttpResponse
 from rest_framework import generics, viewsets, permissions
 from .serializers import MenuItemSerializer, BookingSerializer
 from .models import Menu, Booking
 
 # Create your views here.
-def index(request):
-    return render(request, 'home.html', {})
 
 class MenuItemsView(generics.ListCreateAPIView):
     permission_classes = [permissions.IsAuthenticated]
